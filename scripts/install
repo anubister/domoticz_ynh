@@ -128,9 +128,10 @@ ynh_app_setting_set $app final_path $final_path
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source "$final_path"
 
-cd $final_path
+pushd $final_path
 cmake -DCMAKE_BUILD_TYPE=Release CMakeLists.txt
 make -j 2
+popd
 
 #=================================================
 # NGINX CONFIGURATION
@@ -214,10 +215,10 @@ systemctl reload nginx
 #ynh_local_curl "/INSTALL_PATH" "key1=value1" "key2=value2" "key3=value3"
 
 # Remove the public access
-if [ $is_public -eq 0 ]
-then
-	ynh_app_setting_delete $app skipped_uris
-fi
+#if [ $is_public -eq 0 ]
+#then
+#	ynh_app_setting_delete $app skipped_uris
+#fi
 
 #=================================================
 # MODIFY A CONFIG FILE
@@ -237,7 +238,7 @@ fi
 ### you can make a backup of this file before modifying it again if the admin had modified it.
 
 # Calculate and store the config file checksum into the app settings
-ynh_store_file_checksum "$final_path/CONFIG_FILE"
+#ynh_store_file_checksum "$final_path/CONFIG_FILE"
 
 #=================================================
 # GENERIC FINALIZATION
@@ -250,7 +251,7 @@ ynh_store_file_checksum "$final_path/CONFIG_FILE"
 ### that really need such authorization.
 
 # Set permissions to app files
-chown -R root: $final_path
+#chown -R root: $final_path
 
 #=================================================
 # SETUP LOGROTATE
@@ -288,11 +289,11 @@ yunohost service add $app --log "/var/log/$app/APP.log"
 #=================================================
 
 # Make app public if necessary
-if [ $is_public -eq 1 ]
-then
-	# unprotected_uris allows SSO credentials to be passed anyway.
-	ynh_app_setting_set $app unprotected_uris "/"
-fi
+#if [ $is_public -eq 1 ]
+#then
+#	# unprotected_uris allows SSO credentials to be passed anyway.
+#	ynh_app_setting_set $app unprotected_uris "/"
+#fi
 
 #=================================================
 # RELOAD NGINX
