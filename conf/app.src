@@ -2,3 +2,5 @@ SOURCE_URL=https://github.com/domoticz/domoticz/archive/4.9700.tar.gz
 SOURCE_SUM=c31f185a1ffac01b86a77bf33e059a4403d814e826c9d6639c63c2e9afa55a46
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
+SOURCE_IN_SUBDIR=true
+

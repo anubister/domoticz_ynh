@@ -8,7 +8,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/domoticz-4.9700/domoticz -www PORT >> /var/log/__APP__/__APP__.log 2>&1
+ExecStart=__FINALPATH__/domoticz -www PORT >> /var/log/__APP__/__APP__.log 2>&1
 
 [Install]
 WantedBy=multi-user.target

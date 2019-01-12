@@ -6,22 +6,30 @@
 - Add a `LICENSE` file for the package.
 - Edit `README.md`.
 
-# Example app for YunoHost
+# Domoticz pour YunoHost
 
 [![Integration level](https://dash.yunohost.org/integration/REPLACEBYYOURAPP.svg)](https://ci-apps.yunohost.org/jenkins/job/REPLACEBYYOURAPP%20%28Community%29/lastBuild/consoleFull)  
 [![Install REPLACEBYYOURAPP with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=REPLACEBYYOURAPP)
 
-> *This package allow you to install REPLACEBYYOURAPP quickly and simply on a YunoHost server.  
+> *Ce paquet permet d'installer [Domoticz](https://domoticz.com) rapidement et facilement sur un serveur YunoHost.
+Si vous n'avez pas YunoHost, [voir ici](https://yunohost.org/#/install) comment installer et en profiter.*
+
+> *This package allow you to install [Domoticz](https://domoticz.com) quickly and simply on a YunoHost server.
 If you don't have YunoHost, please see [here](https://yunohost.org/#/install) to know how to install and enjoy it.*
 
-## Overview
-Quick description of this app.
+## Aperçu
+Domoticz permet de gérer un système domotique :
+- enregistrements, tracés de données capteurs (température, humidité, luminosité, ...)
+- commander des actionneurs (lumières, volets, ...)
+- créer des scénarii
+De nombreux protocoles (RFLink, Zwave, MQTT, ...) et matériels sont [compatibles](https://www.domoticz.com/wiki/Hardware).
 
-**Shipped version:** 1.0
+**Version packagée :** Domoticz 4.9700 (version stable au 12/01/2019)
+**Shipped version:** Domoticz 4.9700
 
-## Screenshots
+## Captures d'écran
 
-![](Link to an screenshot for this app)
+[Paramétrage](https://www.domoticz.com/wiki/Application_Settings)
 
 ## Demo
 
@@ -62,7 +70,7 @@ https://yunohost.org/packaging_apps
 
 ## Links
 
- * Report a bug: https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/issues
+ * Report a bug: https://github.com/anubister/domoticz_ynh/issues
  * App website: Link to the official website of this app
  * YunoHost website: https://yunohost.org/
 
