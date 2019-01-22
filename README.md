@@ -23,11 +23,11 @@ Domoticz permet de gérer un système domotique :
 - créer des scénarii
 De nombreux protocoles (RFLink, Zwave, MQTT, ...) et matériels sont [compatibles](https://www.domoticz.com/wiki/Hardware).
 
-*Domoticz is a Home Automation System, allowing:
+*Domoticz is a Home Automation System, allowing:*
 - to save, to plot sensors datas (temperature, humidity, brightness, ...)
 - to command switchs (light, shutters, ...)
 - to create screnarii
-A lot of protocols (RFLink, Zwave, MQTT, ...) and hardware are [compatibles](https://www.domoticz.com/wiki/Hardware).*
+*A lot of protocols (RFLink, Zwave, MQTT, ...) and hardware are [compatibles](https://www.domoticz.com/wiki/Hardware).*
 
 **Version packagée :** Domoticz 4.9700 (version stable au 12/01/2019)
 **Shipped version:** Domoticz 4.9700
@@ -68,21 +68,32 @@ Testé uniquement sur x86-64 (retours bienvenus pour les autres architectures)
 ## Limitations
 
 * Version affichée : V4.5876 au lieu de V4.9700 (bug dans le paquet Domoticz ?)
+
 *Displayed version is V4.5876 instead of V4.9700*
 * Pas de configuration de la langue Domoticz et utilisateurs depuis YunoHost
+
 *no language nor Domoticz users management from YunoHost*
 * Pas de support HTTPS
+
 *no HTTPS support*
 * Pas de support OpenZWave, Telldus
+
 *no OpenZWave nor Telldus support*
 
 ## Crédits
 * Merci à kayou pour son aide pour réaliser cette app.
 
+## Infos developpeurs
+To try the testing branch, please proceed like that:
+```
+sudo yunohost app install https://github.com/anubister/domoticz_ynh/tree/testing --debug
+or
+sudo yunohost app upgrade domoticz -u https://github.com/anubister/domoticz_ynh/tree/testing --debug
+```
+
 ## Liens
 
  * Report a bug: https://github.com/anubister/domoticz_ynh/issues
-   Discussion sur [](xmpp:apps@conference.yunohost.org?join)
+   Discussion sur xmpp:apps@conference.yunohost.org?join
  * App website: https://domoticz.com
  * YunoHost website: https://yunohost.org/
-
