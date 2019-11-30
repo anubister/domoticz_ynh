@@ -80,7 +80,7 @@ ynh_app_setting_set $app path $path_url
 ###		- Remove the section "CLOSE A PORT" in the remove script
 
 # Find a free port
-port=$(ynh_find_port 8080)
+port=$(ynh_find_port --port=8080)
 # Open this port
 yunohost firewall allow --no-upnp TCP $port 2>&1
 ynh_app_setting_set $app port $port
@@ -191,6 +191,7 @@ usermod -a -G dialout $app
 ###		- And the section "SETUP SYSTEMD" in the upgrade script
 
 # Create a dedicated systemd config
+ynh_replace_string "__PORT__"      "$port" "../conf/systemd.service"
 ynh_add_systemd_config
 
 #=================================================
@@ -300,5 +301,5 @@ yunohost service add $app --log "/var/log/$app/APP.log"
 #=================================================
 # RELOAD NGINX
 #=================================================
-
+ynh_systemd_action -n domoticz -a restart
 systemctl reload nginx
