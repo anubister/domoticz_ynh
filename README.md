@@ -10,7 +10,7 @@ Si vous n'avez pas YunoHost, [voir ici](https://yunohost.org/#/install) comment 
 If you don't have YunoHost, please see [here](https://yunohost.org/#/install) to know how to install and enjoy it.*
 
 :warning: L'installation prend entre 20 min et 1h30 suivant votre connexion et machine (téléchargement des sources Domoticz (36Mo) puis compilation), installation depuis la ligne de commande recommandée.
-Raspberry 3B+ : ~1h (SWAP >= 500 Mo)
+Raspberry 3B+ : ~1h (SWAP >= 768 Mo)
 
 :warning: *Installation duration could be between 20min to 1h30 depending on your connection speed and CPU (download of Domoticz sources and compilation). Install from command line is recommanded.*
 
@@ -28,8 +28,8 @@ De nombreux protocoles (RFLink, Zwave, MQTT, ...) et matériels sont [compatible
 - to create screnarii
 *A lot of protocols (RFLink, Zwave, MQTT, ...) and hardware are [compatibles](https://www.domoticz.com/wiki/Hardware).*
 
-**Version packagée :** Domoticz 4.9700 (version stable au 12/01/2019)
-**Shipped version:** Domoticz 4.9700
+**Version packagée :** Domoticz 4.10717 (version stable au 01/01/2020)
+**Shipped version:** Domoticz 4.10717
 
 ## Captures d'écran
 
@@ -64,11 +64,13 @@ Testé sur x86-64 et arm (Raspberry 3B+)
 * ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/jenkins/job/domoticz%20%28Community%29%20(%7EARM%7E)/badge/icon)](https://ci-apps-arm.yunohost.org/ci/apps/domoticz/)
 * Jessie x86-64b - [![Build Status](https://ci-stretch.nohost.me/jenkins/job/domoticz%20%28Community%29/badge/icon)](https://ci-stretch.nohost.me/ci/apps/domoticz/)
 
+Nota : requiert Yunohost >= 3.6 (càd l'image Yunohost Raspberry doit être mise à jour avant d'installer cette app).
+
 ## Limitations
 
-* Version affichée : V4.5876 au lieu de V4.9700 (bug dans le paquet Domoticz ?)
+* Version affichée : V4.9700 au lieu de V4.10717 (bug dans le paquet Domoticz ?)
 
-*Displayed version is V4.5876 instead of V4.9700*
+*Displayed version is V4.9700 instead of V4.10717*
 * Pas de configuration de la langue Domoticz et utilisateurs depuis YunoHost
 
 *no language nor Domoticz users management from YunoHost*
