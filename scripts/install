@@ -96,7 +96,7 @@ ynh_app_setting_set $app port $port
 ###		- As well as the section "REINSTALL DEPENDENCIES" in the restore script
 ###		- And the section "UPGRADE DEPENDENCIES" in the upgrade script
 
-ynh_install_app_dependencies libboost-dev cmake make gcc g++ libssl-dev git libcurl4-gnutls-dev libusb-dev python3-dev zlib1g-dev libboost-thread-dev libboost-system-dev libboost-atomic-dev libboost-regex-dev 
+ynh_install_app_dependencies libboost-dev cmake make gcc g++ libssl-dev git libcurl4-dev libusb-dev python3-dev zlib1g-dev libboost-thread-dev libboost-system-dev libboost-atomic-dev libboost-regex-dev 
 
 
 #=================================================
