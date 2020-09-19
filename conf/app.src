@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/domoticz/domoticz/archive/4.10717.tar.gz
-SOURCE_SUM=c053a2161942529f56b748945ec297dcd67f449e68029fc886893a528891ad86
+SOURCE_URL=https://github.com/domoticz/domoticz/archive/2020.2.tar.gz
+SOURCE_SUM=a02f589daad4eebff1f5e93815c1acd1864cf068f8f5c3185bcdd20207ae395e
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
