@@ -1,6 +1,6 @@
 # Domoticz pour YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/domoticz.svg)](https://ci-apps.yunohost.org/jenkins/job/REPLACEBYYOURAPP%20%28Community%29/lastBuild/consoleFull)  
+[![Integration level](https://dash.yunohost.org/integration/domoticz.svg)](https://dash.yunohost.org/appci/app/domoticz)  
 [![Install Domoticz with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=domoticz)
 
 > Ce paquet permet d'installer [Domoticz](https://domoticz.com) rapidement et facilement sur un serveur YunoHost.
@@ -9,11 +9,10 @@ Si vous n'avez pas YunoHost, [voir ici](https://yunohost.org/#/install) comment 
 > *This package allow you to install [Domoticz](https://domoticz.com) quickly and simply on a YunoHost server.
 If you don't have YunoHost, please see [here](https://yunohost.org/#/install) to know how to install and enjoy it.*
 
-:warning: App en cours de test
-:warning: L'installation peut prendre plus de 30min (téléchargement des sources Domoticz (36Mo) puis compilation), installation depuis la ligne de commande recommandée.
+:warning: L'installation prend entre 20 min et 1h30 suivant votre connexion et machine (téléchargement des sources Domoticz (36Mo) puis compilation), installation depuis la ligne de commande recommandée.
+Raspberry 3B+ : ~1h (SWAP >= 768 Mo)
 
-:warning: *Work in progress*
-:warning: *Installation duration may exceed 30min (download of Domoticz sources and compilation). Install from command line is recommanded.*
+:warning: *Installation duration could be between 20min to 1h30 depending on your connection speed and CPU (download of Domoticz sources and compilation). Install from command line is recommanded.*
 
 ## Aperçu
 
@@ -29,8 +28,8 @@ De nombreux protocoles (RFLink, Zwave, MQTT, ...) et matériels sont [compatible
 - to create screnarii
 *A lot of protocols (RFLink, Zwave, MQTT, ...) and hardware are [compatibles](https://www.domoticz.com/wiki/Hardware).*
 
-**Version packagée :** Domoticz 4.9700 (version stable au 12/01/2019)
-**Shipped version:** Domoticz 4.9700
+**Version packagée :** Domoticz 4.10717 (version stable au 01/01/2020)
+**Shipped version:** Domoticz 4.10717
 
 ## Captures d'écran
 
@@ -58,18 +57,20 @@ Pas de gestion utilisateur et encore moins multi-utilisateur depuis Yunohost.
 
 #### Architectures supportées
 
-Testé uniquement sur x86-64 (retours bienvenus pour les autres architectures)
-*Tested only on x86-64 (feedback welcome for other architecture)*
+Testé sur x86-64 et arm (Raspberry 3B+)
+*Tested on x86-64 and arm (Raspberry 3B+)*
 
-* x86-64b - [![Build Status](https://ci-apps.yunohost.org/jenkins/job/REPLACEBYYOURAPP%20(Community)/badge/icon)](https://ci-apps.yunohost.org/jenkins/job/REPLACEBYYOURAPP%20(Community)/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/jenkins/job/REPLACEBYYOURAPP%20(Community)%20(%7EARM%7E)/badge/icon)](https://ci-apps-arm.yunohost.org/jenkins/job/REPLACEBYYOURAPP%20(Community)%20(%7EARM%7E)/)
-* Jessie x86-64b - [![Build Status](https://ci-stretch.nohost.me/jenkins/job/REPLACEBYYOURAPP%20(Community)/badge/icon)](https://ci-stretch.nohost.me/jenkins/job/REPLACEBYYOURAPP%20(Community)/)
+* x86-64b - [![Build Status](https://ci-apps.yunohost.org/jenkins/job/domoticz%20%28Community%29/badge/icon)](https://ci-apps.yunohost.org/ci/apps/domoticz/)
+* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/jenkins/job/domoticz%20%28Community%29%20(%7EARM%7E)/badge/icon)](https://ci-apps-arm.yunohost.org/ci/apps/domoticz/)
+* Jessie x86-64b - [![Build Status](https://ci-stretch.nohost.me/jenkins/job/domoticz%20%28Community%29/badge/icon)](https://ci-stretch.nohost.me/ci/apps/domoticz/)
+
+Nota : requiert Yunohost >= 3.6 (càd l'image Yunohost Raspberry doit être mise à jour avant d'installer cette app).
 
 ## Limitations
 
-* Version affichée : V4.5876 au lieu de V4.9700 (bug dans le paquet Domoticz ?)
+* Version affichée : V4.9700 au lieu de V4.10717 (bug dans le paquet Domoticz ?)
 
-*Displayed version is V4.5876 instead of V4.9700*
+*Displayed version is V4.9700 instead of V4.10717*
 * Pas de configuration de la langue Domoticz et utilisateurs depuis YunoHost
 
 *no language nor Domoticz users management from YunoHost*
