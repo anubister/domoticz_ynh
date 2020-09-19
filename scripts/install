@@ -304,3 +304,5 @@ yunohost service add $app --log "/var/log/$app/APP.log"
 #ynh_systemd_action -n domoticz -a restart
 #systemctl reload nginx
 ynh_systemd_action --service_name=nginx --action=reload
+ynh_systemd_action --service_name=domoticz --action=start
+
