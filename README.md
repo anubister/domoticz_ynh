@@ -28,7 +28,7 @@ De nombreux protocoles (RFLink, Zwave, MQTT, ...) et matériels sont [compatible
 - to create screnarii
 *A lot of protocols (RFLink, Zwave, MQTT, ...) and hardware are [compatibles](https://www.domoticz.com/wiki/Hardware).*
 
-**Version packagée :** Domoticz 4.10717 (version stable au 01/01/2020)
+**Version packagée :** Domoticz 4.10717 (ne peut pas être mis à jour simplement vers des versions plus récentes du fait d'une dépendance à CMake trop récente)
 **Shipped version:** Domoticz 4.10717
 
 ## Captures d'écran
@@ -65,6 +65,7 @@ Testé sur x86-64 et arm (Raspberry 3B+)
 * Jessie x86-64b - [![Build Status](https://ci-stretch.nohost.me/jenkins/job/domoticz%20%28Community%29/badge/icon)](https://ci-stretch.nohost.me/ci/apps/domoticz/)
 
 Nota : requiert Yunohost >= 3.6 (càd l'image Yunohost Raspberry doit être mise à jour avant d'installer cette app).
+Compatible Yunohost 4.0.x
 
 ## Limitations
 
@@ -80,6 +81,7 @@ Nota : requiert Yunohost >= 3.6 (càd l'image Yunohost Raspberry doit être mise
 * Pas de support OpenZWave, Telldus
 
 *no OpenZWave nor Telldus support*
+
 
 ## Crédits
 * Merci à kayou pour son aide pour réaliser cette app.
