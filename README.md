@@ -9,6 +9,10 @@ Si vous n'avez pas YunoHost, [voir ici](https://yunohost.org/#/install) comment 
 > *This package allow you to install [Domoticz](https://domoticz.com) quickly and simply on a YunoHost server.
 If you don't have YunoHost, please see [here](https://yunohost.org/#/install) to know how to install and enjoy it.*
 
+:warning: une version plus récente et plus rapide à installer est disponible [ici](https://github.com/YunoHost-Apps/domoticz_ynh)
+:warning: a newest and faster version is available [here](https://github.com/YunoHost-Apps/domoticz_ynh)
+
+
 :warning: L'installation prend entre 20 min et 1h30 suivant votre connexion et machine (téléchargement des sources Domoticz (36Mo) puis compilation), installation depuis la ligne de commande recommandée.
 Raspberry 3B+ : ~1h (SWAP >= 768 Mo)
 
